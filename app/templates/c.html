@@ -15,6 +15,45 @@
 	</head>
 	<body>
 		<!-- Your layout here -->
-
+   <div class="box">
+      <div class="stretch mybox">1</div>
+      <div class="stretch mybox">2</div>
+      <div class="stretch mybox">3</div>
+      <div class="stretch mybox">4</div>
+      <div class="stretch mybox">5</div>
+      <div class="stretch mybox">6</div>
+      <div class="stretch mybox">7</div>
+      <div class="stretch mybox">8</div>
+    </div>
 	</body>
+    <style>
+    .mybox {
+      background-color: purple;
+      color : white;
+      font-size: 28px;
+      border-style: solid;
+      width: 17%;
+      height: 25%;
+      text-align: center;
+      align-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }
+    .box {
+      display: flex;
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      height: 500px;
+      align-content:center;
+    }
+    .stretch {
+      align-self: stretch;
+    }
+    .box .selected {
+      align-self: center;
+    }
+      
+  </style>
 </html>
